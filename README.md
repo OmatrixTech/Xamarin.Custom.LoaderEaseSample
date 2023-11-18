@@ -57,3 +57,28 @@ Here are the steps to use this project:
 
 2. Installation:
    - Install the NuGet package 
+3. Register packages in IOS and Android
+   
+    IOS[AppDelegate]=>
+       
+    public override bool FinishedLaunching(UIApplication app, NSDictionary options)
+    {
+        global::Xamarin.Forms.Forms.Init();
+        LoadApplication(new App());
+        Rg.Plugins.Popup.Popup.Init();<----
+        FFImageLoading.Forms.Platform.CachedImageRenderer.Init();<----
+        return base.FinishedLaunching(app, options);
+    }
+    
+    Android[MainActivity]==>
+    
+    protected override void OnCreate(Bundle savedInstanceState)
+    {
+        base.OnCreate(savedInstanceState);
+        Rg.Plugins.Popup.Popup.Init(this);<-----
+        FFImageLoading.Forms.Platform.CachedImageRenderer.Init(true);<-------
+        Xamarin.Essentials.Platform.Init(this, savedInstanceState);
+        global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
+        LoadApplication(new App());
+    }
+   

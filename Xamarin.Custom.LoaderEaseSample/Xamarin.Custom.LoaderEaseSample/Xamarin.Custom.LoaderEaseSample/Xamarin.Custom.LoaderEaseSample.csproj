@@ -9,13 +9,8 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="7.0.0" />
     <PackageReference Include="Rg.Plugins.Popup" Version="2.1.0" />
-    <PackageReference Include="Xamarin.Forms" Version="5.0.0.2196" />  
+    <PackageReference Include="Xamarin.Custom.LoaderEase" Version="1.0.0" />
+    <PackageReference Include="Xamarin.Forms" Version="5.0.0.2622" />  
     <PackageReference Include="Xamarin.Essentials" Version="1.7.0" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Reference Include="Xamarin.Custom.LoaderEase">
-      <HintPath>..\..\..\Xamarin.Custom.LoaderEase\Xamarin.Custom.LoaderEase\bin\Debug\netstandard2.1\Xamarin.Custom.LoaderEase.dll</HintPath>
-    </Reference>
   </ItemGroup>
 </Project>
