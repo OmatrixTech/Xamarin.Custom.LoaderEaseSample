@@ -1,5 +1,4 @@
-A "wait loader" or "loading spinner" is a user interface element commonly used in software applications to indicate to users that a process is ongoing and that they should wait for it to complete. 
-It serves several functions and meets specific requirements to enhance the user experience. Here's a breakdown of the functions and requirements of a wait loader:
+In Xamarin.Forms, a "wait loader" or a loading indicator is typically used to inform the user that a time-consuming operation is in progress, such as data retrieval, processing, or any operation that may cause the UI to freeze or appear unresponsive. 
 
 ### Functions:
 
@@ -53,7 +52,7 @@ Implementing a wait loader effectively requires consideration of these functions
 
 Here are the steps to use this project:
 
-1, Tutorial video link :"https://youtu.be/KHNYFUVjBE8"
+1, Tutorial video link :"https://youtu.be/42aczF8SYgc"
 
 2. Installation:
    - Install the NuGet package 
@@ -81,4 +80,4 @@ Here are the steps to use this project:
         global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
         LoadApplication(new App());
     }
-   
+ 4. Upgrade your "Xamarin.Forms" to version 5.0.0.2622 or later to address the Xamarin.Forms error during package installation.
